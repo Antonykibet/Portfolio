@@ -3,7 +3,8 @@ body{
     background-image:url(guille-pozzi-sbcIAn4Mn14-unsplash.jpg) ;
     background-size: contain;
     background-repeat: repeat;
-    height: 1500px;
+    display: flex;
+    flex-direction: column;
    
 }
 
@@ -15,6 +16,7 @@ div{
     flex-direction: row;
     justify-content: space-between;
     align-items: top;
+    
 }
 #rightSection{
     display: flex;
@@ -119,17 +121,3 @@ div{
     width: 1px;
     margin-top: 60px;
 }
-
-@media(max-width: 369px){
-  
-    #header{
-        background-color: blue;
-    }
-    body{
-        background-image: none;
-        width: 50px;
-        
-    }
-  
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');

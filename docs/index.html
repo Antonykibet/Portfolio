@@ -3,6 +3,7 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="portfolio.css">
+        
     </head>
     <body>
         <div class="header" id="header">
@@ -60,6 +61,13 @@
 
             </div>
         </div>
-        Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+        <script>
+            if (window.matchMedia("(max-width: 300px)").matches) {
+                // The viewport is less than 600 pixels wide
+                document.querySelector("body").innerHTML = '<object type="text/html" data="mobile.html"></object>';
+            }
+        </script>
+         Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
     </body>
 </html>
