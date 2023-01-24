@@ -151,46 +151,61 @@ div{
    
     html{
         background-image: url(starz.jpg);
+        background-size: cover;
+        height: 100%;
         display: flex;
-        align-items: center;
-        
     }
     .mobileHeader{
         display: flex;
         justify-content: flex-end;
+        height: 30px;
+       
     }
-    .darkmode{
+    .themeMode{
+        border: solid;
         margin-right: 50px;
     }
     .mobileHome{
+       margin-top: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        
+        height: 90%;
+        
     }
     .mobileIcon{
-        margin-top: 20px;
-        height: 500px;
-       
+        margin-top: 0px;
+        display: flex;
+        
+        height: 70%;
+        
+
     }
     .mobileThreeD{
-     
+     height: 100%;
         
     }
     .mobileGreetingsDiv{
+        margin-top: 0px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        height: 30%;
+        
+        border-color: beige;
+        margin-bottom: 0px;
     }
     .mobileGreetings{
-        font-size: 50px;
+        font-size: 40px;
         font-family: 'Roboto';
         font-weight: 900;
         margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
    
     .mobileGreetings span {
-        font-size: 50px;
+        font-size: 40px;
         color: white;
         font-weight: inherit;
         
@@ -214,12 +229,20 @@ div{
         width: 30px;
         height: 30px;
      }
+     .HomeSection,.ProjectSection,.GameSection,.AboutSection{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+     }
+     .aboutButton,.gameButton,.projectButton,.homeButton{
+        margin-top: 0px;
+        font-family: 'Roboto';
+        font-size: 12px;
+     }
+     .aboutButton{
+        margin-top: -5px;
+     }
      
- 
-
-
-   
-
-    
-  
  } 

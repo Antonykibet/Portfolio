@@ -7,7 +7,9 @@
     </head>
     <body class="body">
         <div class="mobileHeader">
-            <div class="darkmode">darkmode</div>
+            <button class="themeMode" onclick="changeTheme()">
+                darkmode
+            </button>
         </div>
         <div class="header" id="header">
             <div id="leftSection">
@@ -35,23 +37,27 @@
         
         <div class="mobileHome">
             <div class="mobileIcon">
-                <img class="mobileThreeD" src="business-3d-joyful-young-black-man-jumping.png" alt="joyful man">
+                <img class="mobileThreeD" src="icons/business-3d-joyful-young-black-man-jumping.png" alt="joyful man">
             </div>
-            <div class="mobileGreetngsDiv">
-                <h1 class="mobileGreetings"><span class="mobileGreetingsSpan">I make Modern</span> Websites and <br> Applications</h1>
+            <div class="mobileGreetingsDiv">
+                <h1 class="mobileGreetings"><span class="mobileGreetingsSpan">I make Modern</span> Websites & <br> Applications</h1>
             </div>
             <div class="Navigation">
-                <div>
+                <div class="HomeSection">
                     <img class="HomeButton" src="icons8-home-page-24.png" alt="">
+                    <p class="homeButton">Home</p>
                 </div>
-                <div>
+                <div class="ProjectSection">
                     <img src="icons8-hammer-30.png" alt="">
+                    <p class="projectButton">Projects</p>
                 </div>
-                <div>
+                <div class="GameSection">
                     <img src="icons8-joystick-30.png" alt="">
+                    <p class="gameButton">Games</p>
                 </div>
-                <div>
-                    <img src="icons8-user-30.png" alt="">
+                <div class="AboutSection">
+                    <a href="about.html"><img src="icons8-user-30.png" alt=""></a>
+                    <p class="aboutButton">About</p>
                 </div>
             </div>
         </div>
@@ -63,9 +69,9 @@
                 </div>
     
                 <div id="3Dillustration">
-                    <img id="threeD" src="3d-business-guy-with-backpack-and-laptop.png" alt="">
-                    <img id="threeD" src="business-3d-black-man-in-glasses-standing-and-typing-on-a-phone.png" alt="">
-                    <img id="threeD" src="business-3d-young-man-standing-with-laptop.png" alt="">
+                    <img id="threeD" src="icons/3d-business-guy-with-backpack-and-laptop.png" alt="">
+                    <img id="threeD" src="icons/business-3d-black-man-in-glasses-standing-and-typing-on-a-phone.png" alt="">
+                    <img id="threeD" src="icons/business-3d-young-man-standing-with-laptop.png" alt="">
                 </div>
             </div>
             <div id="aboutSection">
@@ -78,20 +84,15 @@
                 </div>
                 <div id="line">.</div>
                 <div id="skills">
-                    
+
                 </div>
             </div>
             
             <div id="projectsSection">
-                <img src="3d-business-man-has-an-idea.png" alt="">
+                <img src="icons/3d-business-man-has-an-idea.png" alt="">
             </div>
         </div>
-        <script>
-            if (window.matchMedia("(max-width: 300px)").matches) {
-                document.getElementById("header").style.backgroundColor="red";
-                //document.querySelector("body").innerHTML = '<object type="text/html" data="mobile.html"></object>';
-            }
-        </script>
+
         <div id="footer">
             Illustration by <a href=
          "https://icons8.com/illustrations/au
@@ -106,5 +107,10 @@
          300;0,400;0,500;0,700;1,900&d
          isplay=swap');
         </div>
+        <script>
+            function changeTheme(){
+                document.getElementsByClassName("themeMode").innerText="Yeboo!"
+            }
+        </script>
     </body>
 </html>
